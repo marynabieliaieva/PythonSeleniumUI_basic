@@ -12,6 +12,7 @@ class RunIETests():
         # driver = webdriver.Ie(driverLocation)
         driver = webdriver.Ie()
         driver.get("http://www.letskodeit.com")
+        driver.quit()
 
 ieTest = RunIETests()
 ieTest.testMethodIE()

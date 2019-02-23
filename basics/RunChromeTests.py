@@ -10,6 +10,7 @@ class RunChromeTests():
         #driver = webdriver.Chrome(driverLocation)
         driver = webdriver.Chrome()
         driver.get("http://www.letskodeit.com")
-
+        driver.quit()
+        
 chromeTest = RunChromeTests()
 chromeTest.testMethodChrome()

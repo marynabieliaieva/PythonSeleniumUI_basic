@@ -30,7 +30,7 @@ class FindElements():
 
         driver.get("https://google.com")
         elementByXpath = driver.find_element_by_xpath("//*[contains(@name, 'btn')]")
-
+        driver.quit()
 
 
 ff = FindElements()

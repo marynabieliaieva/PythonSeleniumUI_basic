@@ -51,7 +51,6 @@ class ElementsOptions():
         # Find the state of the text box, switch to another state and verify the state changes
         textBoxElement = driver.find_element_by_id('displayed-text')
         hideButton = driver.find_element_by_id('hide-textbox')
-        showButton = driver.find_element_by_id('show-textbox')
         textBoxState = textBoxElement.is_displayed()
         if textBoxState is True:
             hideButton.click()
@@ -60,7 +59,7 @@ class ElementsOptions():
 
         textBoxState = textBoxElement.is_displayed()
         assert textBoxState is False
-
+        driver.quit()
 
 
 e=ElementsOptions()
