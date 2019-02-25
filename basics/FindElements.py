@@ -19,6 +19,7 @@ class FindElements():
         wildCardsElement3 = driver.find_element_by_css_selector("button[class*='style']")
         childElement1 = driver.find_element_by_css_selector("fieldset>a#opentab")
         childElement2 = driver.find_element_by_css_selector("fieldset>a.class1")
+        tableRow = driver.find_elements_by_xpath("//td[contains(text(), 'Selenium WebDriver With Java')]")
 
 
 
